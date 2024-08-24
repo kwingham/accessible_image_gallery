@@ -1,1 +1,56 @@
+.underline {
+  text-decoration: underline;
+  color: rgb(8, 163, 85);
+  text-shadow: 2px 2px 4px rgba(5, 195, 209, 0.5);
+  font-size: 38px;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#imageContainer {
+  max-width: 600px;
+  text-align: center;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button:focus {
+  outline: 2px solid #000;
+}
+
+/* Default light mode */
+body {
+  background-color: #e1fdee;
+  color: #000000;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  /* body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+} */
