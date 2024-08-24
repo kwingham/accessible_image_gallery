@@ -1,0 +1,35 @@
+Australasia:
+
+Animal: Koala
+Description: A sleepy Koala, iconic of Australia, snuggled in a eucalyptus tree.
+Alt Text: "A fluffy Koala nestled in the fork of a eucalyptus tree, peacefully dozing under the Australian sun."
+Africa:
+
+Animal: Meerkat
+Description: A curious Meerkat standing on its hind legs, scanning the horizon in the African savanna.
+Alt Text: "A Meerkat standing alert on its hind legs, surrounded by golden grass in the African savanna."
+North America:
+
+Animal: Raccoon
+Description: A playful Raccoon with its characteristic mask-like markings, holding a piece of fruit in its tiny hands.
+Alt Text: "A playful Raccoon with black and white facial markings, holding a piece of fruit with its tiny hands."
+South America:
+
+Animal: Capybara
+Description: A Capybara, the world's largest rodent, relaxing by the water’s edge with a gentle expression.
+Alt Text: "A calm Capybara sitting by the water’s edge, its soft brown fur glowing in the warm sunlight."
+Europe:
+
+Animal: Hedgehog
+Description: A tiny Hedgehog curled up into a ball, its spiky quills bristling in a forest clearing.
+Alt Text: "A small Hedgehog curled up in a ball, its quills raised defensively in a green forest clearing."
+Asia:
+
+Animal: Red Panda
+Description: A Red Panda perched on a branch, its reddish-brown fur contrasting beautifully with the green leaves.
+Alt Text: "A Red Panda perched gracefully on a branch, its reddish-brown fur and bushy tail contrasting with the green leaves around it."
+Antarctica:
+
+Animal: Penguin Chick
+Description: A fluffy Penguin chick huddled close to its parent on the icy terrain of Antarctica.
+Alt Text: "A fluffy Penguin chick nestled close to its parent, standing on the icy terrain of Antarctica."
