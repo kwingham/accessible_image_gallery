@@ -23,65 +23,67 @@
     </header>
 
     <!-- Image Gallery -->
-    <div class="image-gallery">
-      <button id="prevButton" aria-label="Previous image">❮</button>
-      <div id="imageContainer">
-        <img
-          src="assets/Africa/curious-meerkat.jpg"
-          alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings"
-          class="gallery-image"
-        />
-        <img
-          src="assets/Antarctica/emperor-penguin-family-antarctic.jpg"
-          alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica"
-          class="gallery-image"
-          style="display: none"
-        />
-        <img
-          src="assets/Asia/sleeping-red-panda.jpg"
-          alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight"
-          class="gallery-image"
-          style="display: none"
-        />
-        <img
-          src="assets/Australasia/yawning-koala.jpg"
-          alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves"
-          class="gallery-image"
-          style="display: none"
-        />
-        <img
-          src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg"
-          alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised"
-          class="gallery-image"
-          style="display: none"
-        />
-        <img
-          src="assets/North-America/adorable-and-playful-racoon.jpg"
-          alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression"
-          class="gallery-image"
-          style="display: none"
-        />
-        <img
-          src="assets/South-America/capybara-blissfully-relaxing.jpg"
-          alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun"
-          class="gallery-image"
-          style="display: none"
-        />
+    <section id="gallery-placeholder" class="image-gallery-section">
+      <div class="image-gallery">
+        <button id="prevButton" aria-label="Previous image">❮</button>
+        <div id="imageContainer">
+          <img
+            src="assets/Africa/curious-meerkat.jpg"
+            alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings"
+            class="gallery-image"
+          />
+          <img
+            src="assets/Antarctica/emperor-penguin-family-antarctic.jpg"
+            alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica"
+            class="gallery-image"
+            style="display: none"
+          />
+          <img
+            src="assets/Asia/sleeping-red-panda.jpg"
+            alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight"
+            class="gallery-image"
+            style="display: none"
+          />
+          <img
+            src="assets/Australasia/yawning-koala.jpg"
+            alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves"
+            class="gallery-image"
+            style="display: none"
+          />
+          <img
+            src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg"
+            alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised"
+            class="gallery-image"
+            style="display: none"
+          />
+          <img
+            src="assets/North-America/adorable-and-playful-racoon.jpg"
+            alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression"
+            class="gallery-image"
+            style="display: none"
+          />
+          <img
+            src="assets/South-America/capybara-blissfully-relaxing.jpg"
+            alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun"
+            class="gallery-image"
+            style="display: none"
+          />
+        </div>
+        <button id="nextButton" aria-label="Next image">❯</button>
       </div>
-      <button id="nextButton" aria-label="Next image">❯</button>
-    </div>
+    </section>
 
     <!-- Main Content -->
-    <main role="main" id="gallery">
+    <main role="main" id="main-content">
       <!-- Africa - Meerkat -->
       <section aria-labelledby="africa-meerkat">
-        <h3 id="africa-meerkat">Africa - Meerkat</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="africa-meerkat">Africa - Meerkat</h2>
           <img
             src="assets/Africa/curious-meerkat.jpg"
             alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings"
@@ -89,23 +91,23 @@
           />
           <p>
             Meet the Meerkat, Africa’s most alert and social animal. These
-            little sentinels are known for their tight-knit family groups
-            <strong><br /><br />Captivating Detail:</strong> Meerkats have dark
-            patches around their eyes that reduce the glare of the sun, helping
-            them spot predators from afar.
+            little sentinels are known for their tight-knit family groups.<br />
+            <strong>Captivating Detail:</strong> Meerkats have dark patches
+            around their eyes that reduce the glare of the sun, helping them
+            spot predators from afar.
           </p>
         </div>
       </section>
 
       <!-- Antarctica - Penguin Chick -->
       <section aria-labelledby="antarctic-penguin-family">
-        <h3 id="antarctic-penguin-family">Antarctic - Penguin</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="antarctic-penguin-family">Antarctic - Penguin</h2>
           <img
             src="assets/Antarctica/emperor-penguin-family-antarctic.jpg"
             alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica"
@@ -113,24 +115,24 @@
           />
           <p>
             These Emperor Penguin chicks are braving the cold Antarctic climate
-            under the watchful eye of their parents
-            <strong><br /><br />Amazing Fact:</strong> Emperor Penguins are the
-            only penguin species that breed during the harsh Antarctic winter,
-            with males incubating the eggs for about 65 days in temperatures as
-            low as -60°C (-76°F).
+            under the watchful eye of their parents.<br />
+            <strong>Amazing Fact:</strong> Emperor Penguins are the only penguin
+            species that breed during the harsh Antarctic winter, with males
+            incubating the eggs for about 65 days in temperatures as low as
+            -60°C (-76°F).
           </p>
         </div>
       </section>
 
       <!-- Asia - Red Panda -->
       <section aria-labelledby="asia-red-panda">
-        <h3 id="asia-red-panda">Asia - Red Panda</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="asia-red-panda">Asia - Red Panda</h2>
           <img
             src="assets/Asia/sleeping-red-panda.jpg"
             alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight"
@@ -138,23 +140,23 @@
           />
           <p>
             The Red Panda, with its striking red fur and bushy tail, is a symbol
-            of beauty and tranquility in the forests of Asia
-            <strong><br /><br />Curious Fact:</strong> Red Pandas have a false
-            thumb, which is actually an extended wrist bone that helps them
-            grasp bamboo while feeding.
+            of beauty and tranquility in the forests of Asia.<br />
+            <strong>Curious Fact:</strong> Red Pandas have a false thumb, which
+            is actually an extended wrist bone that helps them grasp bamboo
+            while feeding.
           </p>
         </div>
       </section>
 
       <!-- Australasia - Koala -->
       <section aria-labelledby="australasia-koala">
-        <h3 id="australasia-koala">Australasia - Koala</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="australasia-koala">Australasia - Koala</h2>
           <img
             src="assets/Australasia/yawning-koala.jpg"
             alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves"
@@ -162,23 +164,23 @@
           />
           <p>
             This adorable Koala, an iconic symbol of Australia, enjoys a
-            peaceful moment in its eucalyptus home
-            <strong><br /><br />Intriguing Insight:</strong> Koalas sleep up to
-            18-22 hours a day to conserve energy, as their diet of eucalyptus
-            leaves provides very little nutrition.
+            peaceful moment in its eucalyptus home.<br />
+            <strong>Intriguing Insight:</strong> Koalas sleep up to 18-22 hours
+            a day to conserve energy, as their diet of eucalyptus leaves
+            provides very little nutrition.
           </p>
         </div>
       </section>
 
       <!-- Europe - Hedgehog -->
       <section aria-labelledby="europe-hedgehog">
-        <h3 id="europe-hedgehog">Europe - Hedgehog</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="europe-hedgehog">Europe - Hedgehog</h2>
           <img
             src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg"
             alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised"
@@ -186,23 +188,23 @@
           />
           <p>
             This little Hedgehog, native to Europe, is a nocturnal creature
-            known for its spiky defense mechanism
-            <strong><br /><br />Noteworthy Fact:</strong> Hedgehogs can
-            hibernate during the winter, lowering their body temperature and
-            heart rate to survive the cold months.
+            known for its spiky defense mechanism.<br />
+            <strong>Noteworthy Fact:</strong> Hedgehogs can hibernate during the
+            winter, lowering their body temperature and heart rate to survive
+            the cold months.
           </p>
         </div>
       </section>
 
       <!-- North America - Raccoon -->
       <section aria-labelledby="north-america-raccoon">
-        <h3 id="north-america-raccoon">North America - Raccoon</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="north-america-raccoon">North America - Raccoon</h2>
           <img
             src="assets/North-America/adorable-and-playful-racoon.jpg"
             alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression"
@@ -210,23 +212,22 @@
           />
           <p>
             Raccoons are known for their intelligence and dexterous paws, often
-            seen exploring their surroundings
-            <strong><br /><br />Fascinating Tidbit:</strong> Raccoons can rotate
-            their hind feet 180 degrees, allowing them to climb down trees
-            headfirst!
+            seen exploring their surroundings.<br />
+            <strong>Fascinating Tidbit:</strong> Raccoons can rotate their hind
+            feet 180 degrees, allowing them to climb down trees headfirst!
           </p>
         </div>
       </section>
 
       <!-- South America - Capybara -->
       <section aria-labelledby="south-america-capybara">
-        <h3 id="south-america-capybara">South America - Capybara</h3>
         <div
           role="region"
           aria-live="polite"
           aria-atomic="true"
-          class="image-container-main"
+          class="image-container-main positioned-container"
         >
+          <h2 id="south-america-capybara">South America - Capybara</h2>
           <img
             src="assets/South-America/capybara-blissfully-relaxing.jpg"
             alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun"
@@ -235,18 +236,43 @@
           <p>
             As the largest rodent in the world, the Capybara is surprisingly
             gentle and social. Found in South America, these lovable animals are
-            often seen enjoying life near water
-            <strong><br /><br />Interesting Fact:</strong> Capybaras are
-            excellent swimmers and can hold their breath underwater for up to
-            five minutes!
+            often seen enjoying life near water.<br />
+            <strong>Interesting Fact:</strong> Capybaras are excellent swimmers
+            and can hold their breath underwater for up to five minutes!
           </p>
         </div>
       </section>
     </main>
 
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="image-gallery-section">
+      <!-- Gallery content here -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        This website showcases the cutest animals from every continent. Explore
+        the gallery to learn more about these amazing creatures.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        If you have any questions or suggestions, feel free to
+        <a href="mailto:contact@cutestanimals.com">contact us</a>.
+      </p>
+    </section>
+
     <!-- Footer -->
     <footer role="contentinfo">
-      <p>&copy; 2024 <b>Cutest</b></p>
+      <p>
+        &copy; 2024 <b>Cutest</b> animal from Every continent - Accesable Image
+        Gallery. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>

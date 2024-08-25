@@ -1,37 +1,83 @@
 body {
   font-family: "Trebuchet MS", "Times New Roman";
-  background-color: #c6efd6; /* Light green background color */
+  background-color: #e8b6f5; /* background color */
   color: #242323;
   margin: 0;
   padding: 0;
+  font-size: 23px;
+}
+
+.underline {
+  text-decoration: underline;
+  color: #f5f901;
+  text-shadow: 5px 2px 4px rgba(5, 195, 209, 0.5);
+  font-size: 38px;
 }
 
 header {
-  background-color: #00796b;
+  background-color: #00796b; /* Teal background */
   color: white;
   padding: 2em 1em;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: relative;
-  text-align: center; /* Centering the text in the header */
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
   text-align: center;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+nav ul {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center; /* Centers the list */
 }
 
-.underline {
-  text-decoration: underline;
-  color: rgb(245, 7, 38);
-  text-shadow: 5px 2px 4px rgba(5, 195, 209, 0.5);
-  font-size: 38px;
+nav ul li {
+  display: inline-block; /* Makes the list items horizontal */
+  margin: 0 15px; /* Adds space between the items */
+}
+
+nav ul li a {
+  color: #f1cf0c; /* Set your desired text color here */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #2600ff; /* Change text color on hover */
+  text-decoration: underline; /* Optionally underline text on hover */
+}
+
+/* Image Gallery Section */
+
+/* Navigation Buttons */
+#prevButton,
+#nextButton {
+  background-color: #13f177; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 15px 20px; /* Increase padding for a larger button */
+  font-size: 24px; /* Increase font size for larger text */
+  border-radius: 50%; /* Make buttons circular */
+  cursor: pointer; /* Show pointer cursor on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effects */
+  width: 60px; /* Set a fixed width for the button */
+  height: 60px; /* Set a fixed height for the button */
+}
+
+/* Hover effect for buttons */
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #004d40; /* Darken the button color on hover */
+  transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+.image-gallery-section {
+  background-color: #f5ae92; /* Optional background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px; /* Space between sections */
 }
 
 .image-gallery {
@@ -40,9 +86,8 @@ nav ul li {
   justify-content: center;
   margin: 20px 0;
   padding: 20px;
-  background-color: #92f5c7; /* Adding a white background to the gallery section */
+  background-color: #f5ae92; /* Adding a white background to the gallery section */
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #imageContainer {
@@ -60,11 +105,11 @@ nav ul li {
   display: flex;
   justify-content: center; /* Centers the image horizontally */
   align-items: center; /* Centers the image vertically within the container */
-  flex-direction: column; /* Ensures content stacks vertically */
-  text-align: center; /* Centers the text below the image */
+  flex-direction: column; /* Content stacks vertically */
+  text-align: center; /* Center text below the image */
   margin-bottom: 40px; /* Adds space between sections */
   padding: 20px;
-  background-color: #ffffff; /* Adding a white background to the main image sections */
+  background-color: #f1e4e4; /* Adding a white background to the main image sections */
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -84,4 +129,17 @@ footer {
   padding: 1em 0;
   margin-top: 40px;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Added by ChatGPT: Positioning text over the image --- */
+
+.positioned-container {
+  position: relative; /* Set the container as a reference for absolute positioning */
+  text-align: center; /* Optional: Centers the image and text within the container */
+}
+
+.main-section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
 }

@@ -1,44 +1,143 @@
 body {
   font-family: "Trebuchet MS", "Times New Roman";
-  background-color: #c6efd6; /* Light green background color */
+  background-color: #e8b6f5; /* background color */
   color: #242323;
-  margin: 2;
+  margin: 0;
   padding: 0;
-  /* transition: background-color 0.3s, color 0.3s; */
 }
 
 header {
   background-color: #00796b;
   color: white;
   padding: 2em 1em;
-  /* text-align: center; */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: relative;
+  text-align: center; /* Centering the text in the header */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.underline {
+  text-decoration: underline;
+  color: #f50726;
+  text-shadow: 5px 2px 4px rgba(5, 195, 209, 0.5);
+  font-size: 38px;
+}
+
+/* Image Gallery Section */
+
+/* Navigation Buttons */
+#prevButton,
+#nextButton {
+  background-color: #6eaf04; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 15px 20px; /* Increase padding for a larger button */
+  font-size: 24px; /* Increase font size for larger icons/text */
+  border-radius: 50%; /* Make buttons circular */
+  cursor: pointer; /* Show pointer cursor on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effects */
+  width: 60px; /* Set a fixed width for the button */
+  height: 60px; /* Set a fixed height for the button */
+}
+
+/* Hover effect for buttons */
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #004d40; /* Darken the button color on hover */
+  transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+.image-gallery-section {
+  background-color: #f5ae92; /* Optional background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px; /* Space between sections */
 }
 
 .image-gallery {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5ae92; /* Adding a white background to the gallery section */
+  border-radius: 10px;
 }
 
-/* Container for cycling through the image gallery */
 #imageContainer {
   max-width: 600px;
   text-align: center;
 }
 
-/* Text styling */
-.underline {
-  text-decoration: underline;
-  color: rgb(245, 7, 38);
-  text-shadow: 5px 2px 4px rgba(5, 195, 209, 0.5);
-  font-size: 38px;
+.gallery-image {
+  width: 100%; /* Making gallery images responsive within their container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for gallery images */
 }
 
-img {
-  width: 300px; /* Set the width to 300 pixels */
-  height: auto; /* Maintain the aspect ratio */
+.image-container-main {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically within the container */
+  flex-direction: column; /* Ensures content stacks vertically */
+  text-align: center; /* Centers the text below the image */
+  margin-bottom: 40px; /* Adds space between sections */
+  padding: 20px;
+  background-color: #f1e4e4; /* Adding a white background to the main image sections */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.main-section-image {
+  width: 80%; /* Larger image size for main content sections */
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for main images */
+  margin-bottom: 20px; /* Spacing between image and text */
+}
+
+footer {
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Added by ChatGPT: Positioning text over the image --- */
+
+.positioned-container {
+  position: relative; /* Set the container as a reference for absolute positioning */
+  text-align: center; /* Optional: Centers the image and text within the container */
+}
+
+.positioned-container h3 {
+  position: absolute;
+  top: -35px; /* Adjust as needed */
+  left: 1090px; /* Adjust as needed */
+  margin: 0;
+  padding: 5px 10px; /* Optional: Adds padding around the text */
+  /* Optional: Adds a semi-transparent background for better readability */
+  color: rgb(19, 17, 17);
+}
+
+.main-section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* --- End of ChatGPT additions --- */
