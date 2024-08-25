@@ -1,0 +1,44 @@
+body {
+  font-family: "Trebuchet MS", "Times New Roman";
+  background-color: #c6efd6; /* Light green background color */
+  color: #242323;
+  margin: 2;
+  padding: 0;
+  /* transition: background-color 0.3s, color 0.3s; */
+}
+
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 2em 1em;
+  /* text-align: center; */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: relative;
+}
+
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Container for cycling through the image gallery */
+#imageContainer {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Text styling */
+.underline {
+  text-decoration: underline;
+  color: rgb(245, 7, 38);
+  text-shadow: 5px 2px 4px rgba(5, 195, 209, 0.5);
+  font-size: 38px;
+}
+
+img {
+  width: 300px; /* Set the width to 300 pixels */
+  height: auto; /* Maintain the aspect ratio */
+}

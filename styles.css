@@ -2,35 +2,31 @@ body {
   font-family: "Trebuchet MS", "Times New Roman";
   background-color: #c6efd6; /* Light green background color */
   color: #242323;
-  margin: 2;
+  margin: 0;
   padding: 0;
-  /* transition: background-color 0.3s, color 0.3s; */
 }
 
 header {
   background-color: #00796b;
   color: white;
   padding: 2em 1em;
-  /* text-align: center; */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: relative;
+  text-align: center; /* Centering the text in the header */
 }
 
-.image-gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* Container for cycling through the image gallery */
-#imageContainer {
-  max-width: 600px;
+nav ul {
+  list-style-type: none;
+  padding: 0;
   text-align: center;
 }
 
-/* Text styling */
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
 .underline {
   text-decoration: underline;
   color: rgb(245, 7, 38);
@@ -38,8 +34,54 @@ header {
   font-size: 38px;
 }
 
-img {
-  max-width: 100%;
-  height: ;
-  display: block;
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #92f5c7; /* Adding a white background to the gallery section */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imageContainer {
+  max-width: 600px;
+  text-align: center;
+}
+
+.gallery-image {
+  width: 100%; /* Making gallery images responsive within their container */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for gallery images */
+}
+
+.image-container-main {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically within the container */
+  flex-direction: column; /* Ensures content stacks vertically */
+  text-align: center; /* Centers the text below the image */
+  margin-bottom: 40px; /* Adds space between sections */
+  padding: 20px;
+  background-color: #ffffff; /* Adding a white background to the main image sections */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-section-image {
+  width: 80%; /* Larger image size for main content sections */
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for main images */
+  margin-bottom: 20px; /* Spacing between image and text */
+}
+
+footer {
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
 }

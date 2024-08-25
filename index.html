@@ -5,103 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Cutest animal from Every continent - Accesable Image Gallery</title>
+    <title>Cutest Animal from Every Continent - Accessible Image Gallery</title>
   </head>
   <body>
     <!-- Header and navigation -->
-     <header role="banner">
-      <h1>The <span class="underline">Cutest</span> Animals from Every continent❣️</h1>
+    <header role="banner">
+      <h1>
+        The <span class="underline">Cutest</span> Animals from Every Continent❣️
+      </h1>
       <nav role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#about">About<a></a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-     </header>
-     <div class="image-gallery">
-  <button id="prevButton" aria-label="Previous image">❮</button>
-  
-  <div id="imageContainer">
-    <img src="assets/Africa/curious-meerkat.jpg" alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings" class="gallery-image">
-    <img src="assets/Antarctica/emperor-penguin-family-antarctic.jpg" alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica" class="gallery-image" style="display:none;">
-    <img src="assets/Asia/sleeping-red-panda.jpg" alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight" class="gallery-image" style="display:none;">
-    <img src="assets/Australasia/yawning-koala.jpg" alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves" class="gallery-image" style="display:none;">
-    <img src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg" alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised" class="gallery-image" style="display:none;">
-    <img src="assets/North-America/adorable-and-playful-racoon.jpg" alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression" class="gallery-image" style="display:none;">
-    <img src="assets/South-America/capybara-blissfully-relaxing.jpg" alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun" class="gallery-image" style="display:none;">
-  </div>
+    </header>
 
-  <button id="nextButton" aria-label="Next image">❯</button>
-</div>
-     <!-- Main Content -->
-     <main role="main" id="gallery">
-     <!--Animals-->
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <button id="prevButton" aria-label="Previous image">❮</button>
+      <div id="imageContainer">
+        <img
+          src="assets/Africa/curious-meerkat.jpg"
+          alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings"
+          class="gallery-image"
+        />
+        <img
+          src="assets/Antarctica/emperor-penguin-family-antarctic.jpg"
+          alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica"
+          class="gallery-image"
+          style="display: none"
+        />
+        <img
+          src="assets/Asia/sleeping-red-panda.jpg"
+          alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight"
+          class="gallery-image"
+          style="display: none"
+        />
+        <img
+          src="assets/Australasia/yawning-koala.jpg"
+          alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves"
+          class="gallery-image"
+          style="display: none"
+        />
+        <img
+          src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg"
+          alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised"
+          class="gallery-image"
+          style="display: none"
+        />
+        <img
+          src="assets/North-America/adorable-and-playful-racoon.jpg"
+          alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression"
+          class="gallery-image"
+          style="display: none"
+        />
+        <img
+          src="assets/South-America/capybara-blissfully-relaxing.jpg"
+          alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun"
+          class="gallery-image"
+          style="display: none"
+        />
+      </div>
+      <button id="nextButton" aria-label="Next image">❯</button>
+    </div>
+
+    <!-- Main Content -->
+    <main role="main" id="gallery">
+      <!-- Africa - Meerkat -->
       <section aria-labelledby="africa-meerkat">
         <h3 id="africa-meerkat">Africa - Meerkat</h3>
-        <div role="region" aria-live="polite" aria-atomic="true">
-          <img src="assets/Africa/curious-meerkat.jpg" alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings">
-          <p>Meet the Meerkat, Africa’s most alert and social animal. These little sentinels are known for their tight-knit family groups<strong> <br><br>Captivating Detail:</br></strong>Meerkats have dark patches around their eyes that reduce the glare of the sun, helping them spot predators from afar</p> 
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/Africa/curious-meerkat.jpg"
+            alt="A curious Meerkat standing upright on a rock, attentively surveying its surroundings"
+            class="main-section-image"
+          />
+          <p>
+            Meet the Meerkat, Africa’s most alert and social animal. These
+            little sentinels are known for their tight-knit family groups
+            <strong><br /><br />Captivating Detail:</strong> Meerkats have dark
+            patches around their eyes that reduce the glare of the sun, helping
+            them spot predators from afar.
+          </p>
         </div>
       </section>
-      
+
       <!-- Antarctica - Penguin Chick -->
-       <section aria-labelledby="antarctic-penguin-family">
-        <h3 id="antarctic-penguin-family">Antartic - Penguin</h3>
-        <div role="region" aria-live="polite" aria-atomic="true">
-          <img src="assets/Antarctica/emperor-penguin-family-antarctic.jpg" alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica">
-          <p>These Emperor Penguin chicks are braving the cold Antarctic climate under the watchful eye of their parents <strong>  <br><br>Amazing Fact:<br></strong>Emperor Penguins are the only penguin species that breed during the harsh Antarctic winter, with males incubating the eggs for about 65 days in temperatures as low as -60°C (-76°F)</p>
+      <section aria-labelledby="antarctic-penguin-family">
+        <h3 id="antarctic-penguin-family">Antarctic - Penguin</h3>
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/Antarctica/emperor-penguin-family-antarctic.jpg"
+            alt="Fluffy Emperor Penguin chicks standing near their parents in the snowy expanse of Antarctica"
+            class="main-section-image"
+          />
+          <p>
+            These Emperor Penguin chicks are braving the cold Antarctic climate
+            under the watchful eye of their parents
+            <strong><br /><br />Amazing Fact:</strong> Emperor Penguins are the
+            only penguin species that breed during the harsh Antarctic winter,
+            with males incubating the eggs for about 65 days in temperatures as
+            low as -60°C (-76°F).
+          </p>
         </div>
-       </section>
+      </section>
 
-       <!-- Asia - Red Panda -->
-       <section aria-labelledby="asia-red-panda">
+      <!-- Asia - Red Panda -->
+      <section aria-labelledby="asia-red-panda">
         <h3 id="asia-red-panda">Asia - Red Panda</h3>
-        <div role="region" aria-live="polite" aria-atomic="true">
-          <img src="assets/Asia/sleeping-red-panda.jpg" alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight">
-          <p>The Red Panda, with its striking red fur and bushy tail, is a symbol of beauty and tranquility in the forests of Asia <strong> <br><br>Curious Fact:<br></strong> Red Pandas have a false thumb, which is actually an extended wrist bone that helps them grasp bamboo while feeding</p>
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/Asia/sleeping-red-panda.jpg"
+            alt="A Red Panda curled up on a branch, sleeping peacefully with its reddish-brown fur glowing in the sunlight"
+            class="main-section-image"
+          />
+          <p>
+            The Red Panda, with its striking red fur and bushy tail, is a symbol
+            of beauty and tranquility in the forests of Asia
+            <strong><br /><br />Curious Fact:</strong> Red Pandas have a false
+            thumb, which is actually an extended wrist bone that helps them
+            grasp bamboo while feeding.
+          </p>
         </div>
-       </section>
+      </section>
 
-       <!-- Australasia - Koala -->
-        <section aria-labelledby="australasia-koala">
-          <h3 id="australasia-koala">Australasia - Koala</h3>
-          <div role="region" aria-live="polite" aria-atomic="true">
-            <img src="assets/Australasia/yawning-koala.jpg" alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves">
-            <p>This adorable Koala, an iconic symbol of Australia, enjoys a peaceful moment in its eucalyptus home <strong> <br><br>Intriguing Insight:<br></strong> Koalas sleep up to 18-22 hours a day to conserve energy, as their diet of eucalyptus leaves provides very little nutrition</p>
-          </div>
-        </section>
+      <!-- Australasia - Koala -->
+      <section aria-labelledby="australasia-koala">
+        <h3 id="australasia-koala">Australasia - Koala</h3>
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/Australasia/yawning-koala.jpg"
+            alt="A sleepy Koala perched in a eucalyptus tree, mid-yawn, surrounded by dense green leaves"
+            class="main-section-image"
+          />
+          <p>
+            This adorable Koala, an iconic symbol of Australia, enjoys a
+            peaceful moment in its eucalyptus home
+            <strong><br /><br />Intriguing Insight:</strong> Koalas sleep up to
+            18-22 hours a day to conserve energy, as their diet of eucalyptus
+            leaves provides very little nutrition.
+          </p>
+        </div>
+      </section>
 
-        <!-- Europe - Hedgehog -->
-         <section aria-labelledby="europe-hedgehog">
-          <h3 id="assets/europe-hedgehog">Europe - Hedgehog</h3>
-          <div role="region" aria-live="polite" aria-atomic="true">
-            <img src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg" alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised">
-            <p>This little Hedgehog, native to Europe, is a nocturnal creature known for its spiky defence mechanism <strong> <br><br>Noteworthy Fact:<br></strong> Hedgehogs can hibernate during the winter, lowering their body temperature and heart rate to survive the cold months</p>
-          </div>
-         </section>
+      <!-- Europe - Hedgehog -->
+      <section aria-labelledby="europe-hedgehog">
+        <h3 id="europe-hedgehog">Europe - Hedgehog</h3>
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/Europe/hedhog-resting-in-a-feild-of-clover.jpg"
+            alt="A small Hedgehog curled into a tight ball, resting on a bed of clover with its quills fully raised"
+            class="main-section-image"
+          />
+          <p>
+            This little Hedgehog, native to Europe, is a nocturnal creature
+            known for its spiky defense mechanism
+            <strong><br /><br />Noteworthy Fact:</strong> Hedgehogs can
+            hibernate during the winter, lowering their body temperature and
+            heart rate to survive the cold months.
+          </p>
+        </div>
+      </section>
 
-         <!-- North America - Raccoon -->
-          <section aria-labelledby="north-america-raccoon">
-            <h3 id="north-america-raccoon">North America - Raccoon</h3>
-            <div role="region" aria-live="polite" aria-atomic="true">
-              <img src="assets/North-America/adorable-and-playful-racoon.jpg" alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression">
-              <p>Raccoons are known for their intelligence and dexterous paws, often seen exploring their surroundings <strong> <br><br>Fascinating Tidbit:<br></strong>Raccoons can rotate their hind feet 180 degrees, allowing them to climb down trees headfirst!</p>
-            </div>
-          </section>
+      <!-- North America - Raccoon -->
+      <section aria-labelledby="north-america-raccoon">
+        <h3 id="north-america-raccoon">North America - Raccoon</h3>
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/North-America/adorable-and-playful-racoon.jpg"
+            alt="A playful Raccoon with black and white facial markings, sticking its tongue out in a cheeky expression"
+            class="main-section-image"
+          />
+          <p>
+            Raccoons are known for their intelligence and dexterous paws, often
+            seen exploring their surroundings
+            <strong><br /><br />Fascinating Tidbit:</strong> Raccoons can rotate
+            their hind feet 180 degrees, allowing them to climb down trees
+            headfirst!
+          </p>
+        </div>
+      </section>
 
-          <!-- South America - Capybara -->
-           <section aria-labelledby="south-america-capybara">
-            <h3 id="south-america-capybara">South America - Capybara</h3>
-            <div role="region" aria-live="polite" aria-atomic="true">
-              <img src="assets/South-America/capybara-blissfully-relaxing.jpg" alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun">
-              <p>As the largest rodent in the world, the Capybara is surprisingly gentle and social. Found in South America, these lovable animals are often seen enjoying life near water <strong> <br><br>Interesting Fact:<br></strong>Capybaras are excellent swimmers and can hold their breath underwater for up to five minutes!</p>
-            </div>
-           </section>
+      <!-- South America - Capybara -->
+      <section aria-labelledby="south-america-capybara">
+        <h3 id="south-america-capybara">South America - Capybara</h3>
+        <div
+          role="region"
+          aria-live="polite"
+          aria-atomic="true"
+          class="image-container-main"
+        >
+          <img
+            src="assets/South-America/capybara-blissfully-relaxing.jpg"
+            alt="A calm Capybara lying on green grass near the water’s edge, basking in the warmth of the sun"
+            class="main-section-image"
+          />
+          <p>
+            As the largest rodent in the world, the Capybara is surprisingly
+            gentle and social. Found in South America, these lovable animals are
+            often seen enjoying life near water
+            <strong><br /><br />Interesting Fact:</strong> Capybaras are
+            excellent swimmers and can hold their breath underwater for up to
+            five minutes!
+          </p>
+        </div>
+      </section>
     </main>
-     <footer role="contentinfo">
-       <p>&copy; 2024 <b>Cutest</b> animal from Every continent - Accesable Image Gallery. All rights reserved.</p> 
-     </footer>
-    <div></div>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>&copy; 2024 <b>Cutest</b></p>
+    </footer>
   </body>
 </html>
