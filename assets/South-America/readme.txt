@@ -1,3 +1,0 @@
-https://www.pexels.com/photo/close-up-of-a-capybara-lying-on-the-grass-19289098/
-
-<img src="https://images.pexels.com/photos/19289098/pexels-photo-19289098/free-photo-of-close-up-of-a-capybara-lying-on-the-grass.jpeg" srcset="" alt="Free Close-up of a Capybara Lying on the Grass Stock Photo" class="spacing_noMargin__F5u9R PhotoZoom_image__2c8qM" width="4000" height="6000" style="transform: none; background: rgb(112, 91, 44);">

@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   imageGalleryData.forEach((data, index) => {
     const img = document.createElement("img");
-    img.src = data.src;
-    img.alt = data.alt;
-    img.loading = "lazy";
+    img.setAttribute("data-src", data.src);
+    img.setAttribute("alt", data.alt);
+    img.setAttribute("loading", "lazy"); // Adding lazy loading in JavaScript
     img.classList.add("gallery-image");
     img.style.display = index === 0 ? "block" : "none";
     imageContainer.appendChild(img);
@@ -68,15 +68,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  images.forEach((img, index) => {
+    img.addEventListener("click", function () {
+      sections[index].scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  homeButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   prevButton.addEventListener("click", function () {
     currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
-    console.log(`Prev button clicked, new index: ${currentIndex}`);
     updateGallery();
   });
 
   nextButton.addEventListener("click", function () {
     currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
-    console.log(`Next button clicked, new index: ${currentIndex}`);
     updateGallery();
   });
 
@@ -97,16 +105,5 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton.setAttribute("tabindex", "0");
   nextButton.setAttribute("tabindex", "0");
 
-  function adjustImageSizes() {
-    images.forEach((img) => {
-      const containerWidth = img.parentElement.clientWidth;
-      img.style.width = containerWidth + "px";
-      img.style.height = "auto";
-    });
-  }
-
-  window.addEventListener("resize", adjustImageSizes);
-  adjustImageSizes(); // Initial call to set the image sizes
-
-  updateGallery(); // Initial call to display the first image correctly
+  updateGallery();
 });

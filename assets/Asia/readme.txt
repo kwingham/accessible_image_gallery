@@ -1,3 +1,0 @@
-https://www.pexels.com/photo/red-panda-on-brown-tree-branch-5633389/
-
-<img src="https://images.pexels.com/photos/5633389/pexels-photo-5633389.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" srcset="https://images.pexels.com/photos/5633389/pexels-photo-5633389.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1 1x, https://images.pexels.com/photos/5633389/pexels-photo-5633389.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2 2x" alt="Free Red Panda on Brown Tree Branch Stock Photo" class="spacing_noMargin__F5u9R PhotoZoom_image__2c8qM" width="5355" height="3570" style="transform: none; background: rgb(97, 89, 49);">

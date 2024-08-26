@@ -1,0 +1,176 @@
+/* General body styling */
+body {
+  font-family: "Trebuchet MS", "Times New Roman";
+  background-color: #e8b6f5; /* Background color */
+  color: #242323;
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+}
+
+/* Underlined text styling */
+.underline {
+  text-decoration: underline;
+  color: #f5f901;
+  text-shadow: 5px 2px 4px rgba(5, 195, 209, 0.5);
+  font-size: 38px;
+}
+
+/* Header styling */
+header {
+  background-color: #00796b; /* Teal background */
+  color: white;
+  padding: 2em 1em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: relative;
+  text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  text-align: center; /* Centers the list */
+}
+
+nav ul li {
+  display: inline-block; /* Makes the list items horizontal */
+  margin: 0 15px; /* Adds space between the items */
+}
+
+nav ul li a {
+  color: #f1cf0c; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #2600ff; /* Change text color on hover */
+  text-decoration: underline; /* Optionally underline text on hover */
+}
+
+/* Navigation buttons styling */
+#prevButton,
+#nextButton {
+  background-color: #13f177; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 15px 20px; /* Balanced padding for circular button */
+  font-size: 24px; /* Larger font size */
+  border-radius: 50%; /* Make buttons circular */
+  cursor: pointer; /* Show pointer cursor on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  width: 60px; /* Fixed width */
+  height: 60px; /* Fixed height */
+}
+
+/* Hover effect for navigation buttons */
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #004d40; /* Darken button color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Image gallery section styling */
+.image-gallery-section {
+  background-color: #f5ae92; /* Optional background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px; /* Space between sections */
+}
+
+/* Image gallery styling */
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f5ae92; /* Background color for the gallery section */
+  border-radius: 10px;
+}
+
+#imageContainer {
+  max-width: 600px;
+  text-align: center;
+}
+
+.gallery-image {
+  width: 100%; /* Responsive gallery images */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for gallery images */
+}
+
+/* Main content styling */
+.image-container-main {
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  flex-direction: column; /* Stack content vertically */
+  text-align: center; /* Center text below the image */
+  margin-bottom: 40px; /* Space between sections */
+  padding: 20px;
+  background-color: #f1e4e4; /* Background color for main image sections */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Main section images */
+.main-section-image {
+  width: 80%; /* Larger image size for main content sections */
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for main images */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Remove margin on h2 tags */
+#about h2,
+#contact h2 {
+  margin: 0; /* Removes the default margin */
+  padding-bottom: 0px; /* Add a small padding to separate the heading from the text */
+}
+
+/* Add a slight margin to paragraphs */
+#about p,
+#contact p {
+  margin: 1px 0; /* 5px margin on top and bottom, 0 on the sides */
+}
+
+/* Adjust the padding inside the sections if needed */
+#about,
+#contact {
+  padding: 10px 20px; /* Reduce padding slightly for a more compact look */
+}
+
+Ensure headings have no extra margin #about h2,
+#contact h2 {
+  margin: 0;
+  padding-bottom: 0px; /* Adjust padding below the heading if needed */
+}
+
+/* Footer styling */
+footer {
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 40px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Positioning text over the image --- */
+.positioned-container {
+  position: relative; /* Set container as a reference for absolute positioning */
+  text-align: center; /* Optional: Centers image and text */
+}
+
+.main-section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+}
